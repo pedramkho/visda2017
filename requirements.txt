@@ -5,7 +5,7 @@ scipy
 opencv-python
 scikit-image
 scikit-learn>=0.18
-pytables
-pytorch
+tables
+torch==0.3.1
 torchvision
 batchup
