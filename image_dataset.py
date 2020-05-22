@@ -3,8 +3,8 @@ import cv2
 from sklearn.model_selection import StratifiedShuffleSplit, ShuffleSplit
 
 
-class ImageDataset (object):
-    class ImageAccessor (object):
+class ImageDataset(object):
+    class ImageAccessor(object):
         def __init__(self, dataset):
             self.dataset = dataset
 
@@ -29,7 +29,6 @@ class ImageDataset (object):
                     xs.append(img)
                 return xs
 
-
     def __init__(self, img_size, range01, rgb_order, class_names, n_classes, names, paths, y,
                  dummy=False):
         self.img_size = img_size
@@ -51,7 +50,6 @@ class ImageDataset (object):
         else:
             self.has_ground_truth = False
 
-
     def load_image(self, path):
         if self.dummy:
             return np.random.randint(0, 256, size=self.img_size + (3,)).astype(np.uint8)
@@ -60,7 +58,6 @@ class ImageDataset (object):
             if self.rgb_order:
                 img = img[:, :, ::-1]
             return img
-
 
     def prediction_evaluator(self, sample_indices=None):
         if not self.has_ground_truth:
@@ -72,13 +69,12 @@ class ImageDataset (object):
             return PredictionEvaluator(self.y[sample_indices], self.n_classes, self.class_names)
 
 
-class PredictionEvaluator (object):
+class PredictionEvaluator(object):
     def __init__(self, y, n_classes, class_names):
         self.y = y
         self.n_classes = n_classes
         self.class_names = class_names
         self.hist = np.bincount(y, minlength=self.n_classes)
-
 
     def evaluate(self, tgt_pred_prob_y):
         tgt_pred_y = np.argmax(tgt_pred_prob_y, axis=1)
