@@ -98,7 +98,9 @@ class TrainDataset (VISDA17Dataset):
         for sample_idx, name in enumerate(self.names):
             fn, _ = os.path.splitext(name)
             object_id, _, tail = fn.partition('__')
+            print("-------------------------")
             print(tail)
+            print("-------------------------")
             c_yaw, l_yaw, c_pitch = tail.split('_')
             c_yaw = float(c_yaw)
             l_yaw = float(l_yaw)
