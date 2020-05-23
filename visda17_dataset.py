@@ -98,6 +98,10 @@ class TrainDataset(VISDA17Dataset):
             fn, _ = os.path.splitext(name)
             object_id, _, tail = fn.partition('__')
             print("-------------------------")
+            
+            print("fn: " + str(fn))
+            print("_: " + str(_))
+
             print(name)
             print(tail)
             print("-------------------------")
