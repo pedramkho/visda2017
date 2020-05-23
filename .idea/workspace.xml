@@ -15,14 +15,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/visda17_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+            <state relative-caret-position="408">
+              <caret line="156" column="4" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#199#1683#0" />
+                <element signature="e#1727#5645#0" />
                 <element signature="e#5695#6135#0" />
                 <element signature="e#6179#6599#0" />
-                <element signature="e#6634#7541#0" />
               </folding>
             </state>
           </provider>
@@ -181,14 +181,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visda17_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
+        <state relative-caret-position="408">
+          <caret line="156" column="4" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#199#1683#0" />
+            <element signature="e#1727#5645#0" />
             <element signature="e#5695#6135#0" />
             <element signature="e#6179#6599#0" />
-            <element signature="e#6634#7541#0" />
           </folding>
         </state>
       </provider>

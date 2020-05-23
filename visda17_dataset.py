@@ -98,7 +98,7 @@ class TrainDataset(VISDA17Dataset):
             fn, _ = os.path.splitext(name)
             object_id, _, tail = fn.partition('__')
             print("-------------------------")
-            
+
             print("fn: " + str(fn))
             print("_: " + str(_))
 
@@ -151,9 +151,10 @@ class TestDataset(VISDA17Dataset):
 
 if __name__ == '__main__':
     val = ValidationDataset((96, 96), None, None)
+    print(val.class_names)
     print(val.y.shape, val.y.min(), val.y.max())
     print(len(val.paths))
-
+    
     train = TrainDataset((96, 96), None)
     print(train.y.shape, train.y.min(), train.y.max())
     print(len(train.paths))
