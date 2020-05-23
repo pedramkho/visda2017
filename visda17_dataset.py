@@ -44,8 +44,8 @@ class VISDA17Dataset(ImageDataset):
                                              names, paths, y, dummy=dummy)
 
 
-class TrainDataset (VISDA17Dataset):
-    class ObjectImageAccessor (object):
+class TrainDataset(VISDA17Dataset):
+    class ObjectImageAccessor(object):
         def __init__(self, dataset):
             self.dataset = dataset
 
@@ -78,7 +78,6 @@ class TrainDataset (VISDA17Dataset):
                     type(items)
                 ))
 
-
     def __init__(self, img_size, range01=False, rgb_order=False, dummy=False):
         train_dir = settings.get_data_dir('visda17_clf_train')
         file_list_path = os.path.join(train_dir, 'image_list.txt')
@@ -99,6 +98,7 @@ class TrainDataset (VISDA17Dataset):
             fn, _ = os.path.splitext(name)
             object_id, _, tail = fn.partition('__')
             print("-------------------------")
+            print(name)
             print(tail)
             print("-------------------------")
             c_yaw, l_yaw, c_pitch = tail.split('_')
@@ -127,8 +127,7 @@ class TrainDataset (VISDA17Dataset):
         self.obj_X = self.ObjectImageAccessor(self)
 
 
-
-class ValidationDataset (VISDA17Dataset):
+class ValidationDataset(VISDA17Dataset):
     def __init__(self, img_size, range01=False, rgb_order=False, dummy=False):
         val_dir = settings.get_data_dir('visda17_clf_validation')
         file_list_path = os.path.join(val_dir, 'image_list.txt')
@@ -137,15 +136,13 @@ class ValidationDataset (VISDA17Dataset):
                                                 dummy=dummy)
 
 
-
-class TestDataset (VISDA17Dataset):
+class TestDataset(VISDA17Dataset):
     def __init__(self, img_size, range01=False, rgb_order=False, dummy=False):
         test_dir = settings.get_data_dir('visda17_clf_test')
         file_list_path = os.path.join(test_dir, 'image_list.txt')
         super(TestDataset, self).__init__(img_size, range01, rgb_order,
                                           file_list_path, test_dir, has_ground_truth=False,
                                           dummy=dummy)
-
 
 
 if __name__ == '__main__':
@@ -162,7 +159,7 @@ if __name__ == '__main__':
     print(len(train.samples_by_cam_pitch))
     sizes, counts = np.unique([x.shape[0] for x in train.samples_by_obj_id], return_counts=True)
 
-    print(sizes, counts, sizes*counts, (sizes*counts).sum())
+    print(sizes, counts, sizes * counts, (sizes * counts).sum())
 
     lengths = np.array([x.shape[0] for x in train.samples_by_obj_id])
     obj_ids = np.arange(lengths.shape[0])[lengths == 11]
