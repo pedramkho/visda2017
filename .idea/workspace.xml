@@ -15,16 +15,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/visda17_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="143" column="78" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
+            <state relative-caret-position="408">
+              <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#199#1683#0" />
-                <element signature="e#1727#5645#0" />
                 <element signature="e#1771#3295#0" />
                 <element signature="e#3185#3295#0" />
-                <element signature="e#3385#5645#0" />
                 <element signature="e#5695#6135#0" />
+                <element signature="e#6179#6599#0" />
                 <element signature="e#6262#6599#0" />
               </folding>
             </state>
@@ -130,17 +128,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/visda17_dataset.py</url>
-          <line>105</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cmdline_helpers.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -164,16 +151,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visda17_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="143" column="78" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
+        <state relative-caret-position="408">
+          <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
             <element signature="e#199#1683#0" />
-            <element signature="e#1727#5645#0" />
             <element signature="e#1771#3295#0" />
             <element signature="e#3185#3295#0" />
-            <element signature="e#3385#5645#0" />
             <element signature="e#5695#6135#0" />
+            <element signature="e#6179#6599#0" />
             <element signature="e#6262#6599#0" />
           </folding>
         </state>
