@@ -154,7 +154,7 @@ if __name__ == '__main__':
     print(val.class_names)
     print(val.y.shape, val.y.min(), val.y.max())
     print(len(val.paths))
-    
+
     train = TrainDataset((96, 96), None)
     print(train.y.shape, train.y.min(), train.y.max())
     print(len(train.paths))
